@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="stylecart.css">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <section class="cart-items">
+        <div class="cart-item">
+            <img src="./assets/images/product-01.jpg" alt="Product 1">
+            <div class="item-details">
+                <h2>Dog Bed</h2>
+                <p>Price: $29.99</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="./assets/images/product-02.jpg" alt="Product 2">
+            <div class="item-details">
+                <h2>Dog Shampoo</h2>
+                <p>Price: $19.99</p>
+                <button class="remove-button">Remove</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-summary" aria-label="center">
+        <h2>Cart Summary</h2>
+        <p>Total Items: 2</p>
+        <p>Total Price: $49.98</p>
+        <button onclick="showPopup()">Checkout</button>
+
+    <script>
+        function showPopup() {
+            alert("Checkout Done. Product will be delivered soon");
+        }
+    </script>
+    </section>
+
+   
+</body>
+</html>
